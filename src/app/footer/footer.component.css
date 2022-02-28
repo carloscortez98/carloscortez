@@ -1,0 +1,60 @@
+h1, a, span {
+  text-decoration: none;
+  color: white;
+
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #120907;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 32px;
+  font-family: "LGCbold", sans-serif;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.social-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+.social-div span {
+  margin-top: 0;
+  margin-left: 5px;
+  font-size: 16px;
+  font-family: "LGC", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .box {
+    margin-bottom: 2%;
+  }
+
+  .social-div {
+    margin-bottom: 2%;
+  }
+}

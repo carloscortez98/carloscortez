@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: LGCbold;
+  src: url(assets/fonts/LouisGeorgeCafeBold.ttf);
+}
+
+@font-face {
+  font-family: LGC;
+  src: url(assets/fonts/LouisGeorgeCafe.ttf);
+}
+
+@font-face {
+  font-family: LGClightitalic;
+  src: url(assets/fonts/LouisGeorgeCafeLightItalic.ttf);
+}
+
+.mat-simple-snack-bar-content {
+  font-size: 16px;
+  font-family: "LGC", sans-serif;
+  background-color: #8d85d4;
+}
+
+.mat-simple-snackbar {
+  background-color: #8d85d4;
+}
+
+.mat-snack-bar-container {
+  min-width: 0 !important;
+  max-width: 55vw !important;
+  background-color: #8d85d4;
+}
+
+.mat-simple-snackbar-action {
+  color: white;
+  font-size: 14px;
+  font-family: "LGC", sans-serif;
+  background-color: #8d85d4;
+}

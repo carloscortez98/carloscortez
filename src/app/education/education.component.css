@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-color: #3379C2;
+  background-image: url("/assets/images/education-backg.svg");
+}
+
+.box {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 2%;
+  margin-top: 2%;
+}
+
+.box h3 {
+  font-size: 24px;
+  font-family: "LGC", sans-serif;
+  padding-left: 4%;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.list li {
+  width: 35%;
+  margin-top: 2%;
+}
+
+.second {
+  margin-bottom: 2%;
+}
+
+.web {
+  font-size: 18px;
+  font-family: "LGClight", sans-serif;
+}
+
+.web ul li {
+  font-size: 14px;
+}
+
+.institute {
+  font-size: 18px;
+  font-family: "LGClight", sans-serif;
+}
+
+.institute ul li {
+  font-size: 14px;
+}
+
+.certificate-list {
+  padding-left: 10%;
+}
+
+.certificate {
+  font-size: 16px;
+  font-family: "LGClight", sans-serif;
+  margin-top: 1%;
+}
+
+.web::marker {
+  content: "💻 ";
+}
+
+.institute::marker {
+  content: "🏢 ";
+}
+
+.completed::marker {
+  content: "✔️ ";
+}
+
+.incomplete::marker {
+  content: "❌ ";
+}
+
+.location::marker {
+  content: "📍  ";
+}
+
+.year::marker {
+  content: "📅 ";
+}
+
+.certificate::marker {
+  content: "🧾 ";
+}
+
+@media (max-width: 640px) {
+  .box {
+    width: 85%;
+    padding: 4%;
+    margin-top: 4%;
+  }
+
+  .list {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .list li {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .second {
+    margin-bottom: 4%;
+  }
+
+  .certificate-list {
+    margin-top: 4%;
+  }
+
+  .certificate {
+    margin-top: 2%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+
+  .list {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .list li {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+}

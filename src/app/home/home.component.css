@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-color: #3379C2;
+  background-image: url("/assets/images/home-backg.svg");
+}
+
+.left-container {
+  width: 70%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 2%;
+  margin-top: 2%;
+  font-size: 14px;
+  font-family: "LGClight", sans-serif;
+}
+
+.cv-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-div a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.logo-container img {
+  height: 250px;
+  max-width: 25%;
+  margin-top: 2%;
+}
+
+.logo-container img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* From cssbuttons.io by @nikk7007 */
+button {
+ padding: 0.8em 1.8em;
+ border: 2px solid #8d85d4;
+ position: relative;
+ overflow: hidden;
+ background-color: transparent;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 16px;
+ transition: .3s;
+ z-index: 1;
+ font-family: "LGCbold", sans-serif;
+ color: #17C3B2;
+ margin-top: 2%;
+}
+
+button a {
+  text-decoration: none;
+  color: #1e213c;
+}
+
+button::before {
+ content: '';
+ width: 0;
+ height: 300%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%) rotate(45deg);
+ background: #8d85d4;
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+button:hover::before {
+ width: 105%;
+}
+
+button:hover {
+ color: #111;
+}
+
+@media (max-width: 768px) {
+  .left-container {
+    width: 85%;
+    padding: 4%;
+    margin-top: 4%;
+  }
+
+  .logo-container {
+    width: 95%;
+    padding: 2%;
+    margin-bottom: 4%;
+  }
+
+  .logo-container img {
+    height: auto;
+    flex: 1 0 21%;
+  }
+}
